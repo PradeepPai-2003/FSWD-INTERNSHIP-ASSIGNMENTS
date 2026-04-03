@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Calculator - JavaScript Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+            letter-spacing: -1px;
+        }
+
+        h2 {
+            color: #764ba2;
+            font-size: 1.3em;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .instruction {
+            background-color: #f0f4ff;
+            border-left: 5px solid #667eea;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            line-height: 1.8;
+        }
+
+        .instruction p {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .instruction strong {
+            color: #667eea;
+        }
+
+        .steps {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .steps li {
+            color: #555;
+            padding: 8px 0;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        .steps li:before {
+            content: "→ ";
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            flex: 1;
+            min-width: 150px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-test {
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            color: white;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-test:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-clear {
+            background: #f0f4ff;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+
+        .btn-clear:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin-top: 25px;
+            border-radius: 5px;
+            color: #856404;
+            font-size: 0.95em;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.1em;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🧮 Console Calculator</h1>
+    
+    <h2>JavaScript Console Demo</h2>
+    
+    <div class="instruction">
+        <p><strong>How to Access the Console:</strong></p>
+        <ul class="steps">
+            <li>Right-click on this page</li>
+            <li>Select "Inspect" or "Inspect Element"</li>
+            <li>Click on the "Console" tab</li>
+            <li>You'll see the calculation results below</li>
+        </ul>
+    </div>
+
+    <p style="color: #666; line-height: 1.8; margin-bottom: 20px;">
+        This page demonstrates basic JavaScript mathematical operations using console logging. 
+        Open the browser console to see the results of addition, subtraction, multiplication, and division operations.
+    </p>
+
+    <div class="button-group">
+        <button class="btn-test" onclick="runCalculations()">Run Calculations</button>
+        <button class="btn-clear" onclick="clearConsole()">Clear Console</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

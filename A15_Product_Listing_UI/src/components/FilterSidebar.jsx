@@ -1,5 +1,7 @@
 import '../styles/FilterSidebar.css'
 
+const categories = ['all', 'electronics', 'fashion', 'home', 'sports']
+
 function FilterSidebar({
   category,
   setCategory,
@@ -8,7 +10,6 @@ function FilterSidebar({
   sort,
   setSort,
 }) {
-  const categories = ['all', 'electronics', 'fashion', 'home', 'sports']
 
   return (
     <aside className="filters glass">

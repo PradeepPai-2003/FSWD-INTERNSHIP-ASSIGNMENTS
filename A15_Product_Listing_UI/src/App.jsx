@@ -4,17 +4,18 @@ import ProductCard from './components/ProductCard'
 import FilterSidebar from './components/FilterSidebar'
 import CartDrawer from './components/CartDrawer'
 
+const products = [
+  { id: 1, name: 'Premium Headphones', price: 79, category: 'electronics', rating: 4.5, image: '/headphones.png' },
+  { id: 2, name: 'Astro Smart Watch', price: 199, category: 'electronics', rating: 4.8, image: '/watch.png' },
+  { id: 3, name: 'Ultra Boost Shoes', price: 99, category: 'fashion', rating: 4.3, image: '/shoes.png' },
+  { id: 4, name: 'Arctic Winter Jacket', price: 149, category: 'fashion', rating: 4.6, image: 'https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&q=80&w=400' },
+  { id: 5, name: 'Barista Coffee Maker', price: 129, category: 'home', rating: 4.4, image: 'https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&q=80&w=400' },
+  { id: 6, name: 'Minimalist Desk Lamp', price: 45, category: 'home', rating: 4.2, image: 'https://images.unsplash.com/photo-1534073828943-f801091bb18c?auto=format&fit=crop&q=80&w=400' },
+  { id: 7, name: 'Pro Yoga Mat', price: 35, category: 'sports', rating: 4.7, image: 'https://images.unsplash.com/photo-1592432678016-e910b452f9a2?auto=format&fit=crop&q=80&w=400' },
+  { id: 8, name: 'Steel Dumbbells', price: 89, category: 'sports', rating: 4.5, image: 'https://images.unsplash.com/photo-1638536532686-d610adfc8e5c?auto=format&fit=crop&q=80&w=400' },
+]
+
 function App() {
-  const products = [
-    { id: 1, name: 'Premium Headphones', price: 79, category: 'electronics', rating: 4.5, image: '/headphones.png' },
-    { id: 2, name: 'Astro Smart Watch', price: 199, category: 'electronics', rating: 4.8, image: '/watch.png' },
-    { id: 3, name: 'Ultra Boost Shoes', price: 99, category: 'fashion', rating: 4.3, image: '/shoes.png' },
-    { id: 4, name: 'Arctic Winter Jacket', price: 149, category: 'fashion', rating: 4.6, image: 'https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&q=80&w=400' },
-    { id: 5, name: 'Barista Coffee Maker', price: 129, category: 'home', rating: 4.4, image: 'https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&q=80&w=400' },
-    { id: 6, name: 'Minimalist Desk Lamp', price: 45, category: 'home', rating: 4.2, image: 'https://images.unsplash.com/photo-1534073828943-f801091bb18c?auto=format&fit=crop&q=80&w=400' },
-    { id: 7, name: 'Pro Yoga Mat', price: 35, category: 'sports', rating: 4.7, image: 'https://images.unsplash.com/photo-1592432678016-e910b452f9a2?auto=format&fit=crop&q=80&w=400' },
-    { id: 8, name: 'Steel Dumbbells', price: 89, category: 'sports', rating: 4.5, image: 'https://images.unsplash.com/photo-1638536532686-d610adfc8e5c?auto=format&fit=crop&q=80&w=400' },
-  ]
 
   const [category, setCategory] = useState('all')
   const [price, setPrice] = useState(300)

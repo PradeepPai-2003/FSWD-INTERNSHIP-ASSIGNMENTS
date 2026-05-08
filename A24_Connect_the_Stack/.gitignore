@@ -1,0 +1,53 @@
+# ========================
+# Node.js / npm
+# ========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+
+# ========================
+# Environment Variables
+# ========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ========================
+# Build Output (Vite / React)
+# ========================
+dist/
+build/
+.vite/
+
+# ========================
+# OS & Editor Files
+# ========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ========================
+# Logs & Debug
+# ========================
+logs/
+*.log
+
+# ========================
+# Misc
+# ========================
+.cache/
+.temp/
